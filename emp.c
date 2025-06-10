@@ -9,16 +9,22 @@ int main()
     printf("Enter Employee Details :");
     printf("\nID");
     scanf("%d",&eid);
+
     printf("\nName");
     scanf("%s",&ename);
+
     printf("Enter Basic salary:");
     scanf("%f",&bs);
+
     printf("Enter daliy alouns(%%):");
     scanf("%f",&da);
+
     printf(" enter house rent(%%):");
     scanf("%f",&hra);
+
     printf("Enter Tax(%%):");
     scanf("%f",&tax);
+    
     totalsalary=bs+((bs*(da+hra-tax))/100);
     fprintf(fp,"\n-----------Employee salary Slip----------");
     fprintf(fp,"\n\t\tID          :%d",eid);
