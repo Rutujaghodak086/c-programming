@@ -1,13 +1,16 @@
 #include<stdio.h>
 int main()
 {
-    int amt;
+    int w,x,y,z;
     printf("Enter amoount");
-    scanf("%d",&amt);
-    printf(" 10*%d",amt/10);
-    amt=amt%10;
-    printf("\n5*%d",amt/5);
-    amt=amt%5;
-    printf("\n1*%d",amt/1);
+    scanf("%d",&w);
+    x=w/10;
+    w=w%10;
+    y=w/5;
+    w=w%5;
+    z=w;
+    printf("note of 10:%d\n",x);
+    printf("note of 5:%d\n",y);
+    printf("note of 1:%d\n",z);
     return 0;
 }
